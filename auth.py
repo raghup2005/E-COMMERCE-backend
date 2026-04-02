@@ -1,6 +1,9 @@
 from passlib.context import CryptContext
 from jose import jwt,JWTError
 from datetime import datetime,timedelta,timezone
+from fastapi import FastAPI
+
+app=FastAPI()
 
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
 
