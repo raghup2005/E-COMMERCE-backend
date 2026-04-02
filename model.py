@@ -25,7 +25,8 @@ class Cart(base):
 
     quantity=Column(Integer)
     user = relationship("User", back_populates="cart_items")
-
+    product = relationship("Product", back_populates="cart_items")
+    
 
 class Order(base):
     __tablename__ = "orders"
@@ -43,6 +44,7 @@ class OrderItem(base):
     quantity = Column(Integer)
 
     order = relationship("Order", back_populates="items")
+    product = relationship("Product", back_populates="order_items")
 
 class ProductCreate(BaseModel):
     name:str
