@@ -87,7 +87,7 @@ http://127.0.0.1:8000/docs
 ##  Author
 
 **Raghu**
-backend developer-FASTAPI
+backend developer-FASTAPI,sql,python
 
 ---
 
